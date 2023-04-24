@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <title>Website Layout 1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            min-height: 100%;
+            flex-direction: column;
+            margin: 0;
+        }
+        #main{
+            display: flex;
+            flex: 1;
+        }
+        #main > article{
+            flex: 1;
+            order: 1;
+        }
+        #main > nav,
+        #main > aside{
+            flex: 0 0 20vw;
+        }
+
+        #main > nav{
+            background: #D7E8D4;
+            order: 3;
+        }
+        #main > aside{
+            background: beige;
+            order: 2;
+        }
+        header,footer{
+            background: yellowgreen;
+            height: 20vh;
+        }
+        header,footer,article,nav,aside{
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>My First Article</p></header>
+    <div id="main">
+    <article>
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry canal pickled sriracha normcore hashtag polarold single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock,
+</p></article>
+    <nav>
+        <p>Nav</p></nav>
+    <aside>
+        <p>Aside
+        </p></aside>
+    </div>
+    <footer>Thank You</footer>
+</body>
+</html>
